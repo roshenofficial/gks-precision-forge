@@ -1,26 +1,33 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/gks-logo.png";
-
 const navigation = {
-  main: [
-    { name: "Home", href: "/" },
-    { name: "Capabilities", href: "/capabilities" },
-    { name: "Clients", href: "/clients" },
-    { name: "Quality", href: "/quality" },
-    { name: "About", href: "/about" },
-    { name: "Awards", href: "/awards" },
-    { name: "Contact", href: "/contact" },
-  ],
-  certifications: [
-    "IATF16949:2016",
-    "ISO 9001:2015",
-  ],
+  main: [{
+    name: "Home",
+    href: "/"
+  }, {
+    name: "Capabilities",
+    href: "/capabilities"
+  }, {
+    name: "Clients",
+    href: "/clients"
+  }, {
+    name: "Quality",
+    href: "/quality"
+  }, {
+    name: "About",
+    href: "/about"
+  }, {
+    name: "Awards",
+    href: "/awards"
+  }, {
+    name: "Contact",
+    href: "/contact"
+  }],
+  certifications: ["IATF16949:2016", "ISO 9001:2015"]
 };
-
 export function Footer() {
-  return (
-    <footer className="bg-accent text-accent-foreground">
+  return <footer className="bg-accent text-accent-foreground">
       <div className="container-wide section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -32,25 +39,18 @@ export function Footer() {
                 <span className="block text-xs text-accent-foreground/70 font-medium -mt-1">Engineering Works</span>
               </div>
             </Link>
-            <p className="mt-4 text-sm text-accent-foreground/80 leading-relaxed">
-              Precision machining excellence since 1995. Trusted Tier-3 supplier delivering zero-defect components for world-class automotive manufacturers.
-            </p>
+            <p className="mt-4 text-sm text-accent-foreground/80 leading-relaxed">Precision machining excellence since 1995.</p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="font-display font-bold text-lg mb-4 text-primary">Quick Links</h3>
             <ul className="space-y-2">
-              {navigation.main.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className="text-sm text-accent-foreground/80 hover:text-primary transition-colors"
-                  >
+              {navigation.main.map(item => <li key={item.name}>
+                  <Link to={item.href} className="text-sm text-accent-foreground/80 hover:text-primary transition-colors">
                     {item.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -83,14 +83,12 @@ export function Footer() {
           <div>
             <h3 className="font-display font-bold text-lg mb-4 text-primary">Certifications</h3>
             <ul className="space-y-2">
-              {navigation.certifications.map((cert) => (
-                <li key={cert} className="text-sm text-accent-foreground/80">
+              {navigation.certifications.map(cert => <li key={cert} className="text-sm text-accent-foreground/80">
                   {cert}
-                </li>
-              ))}
+                </li>)}
             </ul>
             <div className="mt-6">
-              <p className="text-sm text-accent-foreground/60">GST: 33AADFG6951H1ZG</p>
+              
             </div>
           </div>
         </div>
@@ -106,6 +104,5 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
