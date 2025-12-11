@@ -6,13 +6,12 @@ import qualityLab from "@/assets/quality-lab.jpg";
 
 const certifications = [
   { name: "IATF16949:2016", description: "International Automotive Task Force quality management certification" },
-  { name: "ISO 9001:2015", description: "International standard for quality management systems" },
 ];
 
 const equipment = [
   { name: "Sipcon Video Measuring Machine", capability: "Precision optical measurement and inspection" },
-  { name: "Mitutoyo Profile Projector", capability: "Contour and profile verification" },
-  { name: "Mitutoyo Surface Roughness Tester", capability: "Ra surface finish measurement" },
+  { name: "Mitutoyo Profile Projector", capability: "Profile verification" },
+  { name: "Mitutoyo Surface Roughness Tester SurfTest SF-410", capability: "Ra surface finish measurement" },
   { name: "Mitutoyo Roundness Tester RA-2000", capability: "Cylindricity and roundness analysis" },
   { name: "FIE Rockwell Hardness Tester", capability: "Material hardness verification" },
   { name: "Fischer Coating Thickness Gauge FMP10-20", capability: "Plating and coating measurement" },

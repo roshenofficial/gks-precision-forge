@@ -9,11 +9,6 @@ const certifications = [
     description: "International Automotive Task Force quality management standard - the most rigorous quality certification for automotive suppliers worldwide.",
     icon: Shield,
   },
-  { 
-    name: "ISO 9001:2015", 
-    description: "International standard for quality management systems demonstrating consistent delivery of products meeting customer and regulatory requirements.",
-    icon: Shield,
-  },
 ];
 
 const awards = [

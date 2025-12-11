@@ -80,7 +80,7 @@ export default function About() {
                 Geekay's Engineering Works (GKS) is a precision machining company based in Ambattur, Chennai, India, serving the automobile industry since 1995. What began with a single lathe machine has grown into a comprehensive manufacturing facility equipped with state-of-the-art CNC technology.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                As a trusted Tier-3 supplier to world-class Tier-2 clients like Delphi TVS Diesel Systems and Electromags, we contribute critical machined components for Tier-1 OEMs such as Mahindra, Nissan, Renault, Bosch, JCB, and Simson.
+                As a trusted Tier-3 supplier to world-class Tier-2 clients like Delphi TVS Diesel Systems, Lucas-TVS, and Electromags, we contribute critical machined components for Tier-1 OEMs such as Mahindra, Nissan, Renault, Bosch, JCB, and Simson.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 We are certified under IATF16949:2016 and known for our zero-defect delivery mindset, process capability, consistency, and on-time delivery across high-volume production.
