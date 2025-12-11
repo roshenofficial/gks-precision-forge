@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/gks-logo.png";
+import logo from "@/assets/gke-logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -24,10 +24,10 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-              <img className="h-12 w-auto" src={logo} alt="GKS Logo" />
+              <img className="h-12 w-auto" src={logo} alt="GKE Logo" />
               <div className="hidden sm:block">
-                <span className="font-display font-bold text-xl text-foreground">Geekay's</span>
-                <span className="block text-xs text-muted-foreground font-medium -mt-1">Engineering Works</span>
+                <span className="font-display font-bold text-2xl text-foreground">Geekay's</span>
+                <span className="block text-sm text-muted-foreground font-medium -mt-1">Engineering Works</span>
               </div>
             </Link>
           </div>
@@ -48,7 +48,7 @@ export function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-semibold leading-6 transition-colors duration-200 ${
+                className={`text-base font-semibold leading-6 transition-colors duration-200 ${
                   location.pathname === item.href
                     ? "text-primary"
                     : "text-foreground hover:text-primary"
@@ -59,13 +59,7 @@ export function Header() {
             ))}
           </div>
           
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-4">
-            <Button variant="outline" size="sm" asChild>
-              <a href="tel:+919876543210" className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                +91 98765 43210
-              </a>
-            </Button>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Button size="sm" asChild>
               <Link to="/contact">Get a Quote</Link>
             </Button>
@@ -110,12 +104,6 @@ export function Header() {
                 ))}
               </div>
               <div className="py-6 space-y-3">
-                <Button variant="outline" className="w-full" asChild>
-                  <a href="tel:+919876543210" className="flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
-                    +91 98765 43210
-                  </a>
-                </Button>
                 <Button className="w-full" asChild>
                   <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
                 </Button>

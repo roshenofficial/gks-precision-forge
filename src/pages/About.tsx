@@ -8,9 +8,9 @@ const timeline = [
   { year: "1995", title: "Foundation", description: "Started with a single lathe machine, driven by vision and determination" },
   { year: "2005", title: "Expansion", description: "Added CNC capabilities and multi-spindle automats" },
   { year: "2010", title: "IATF Certification", description: "Achieved IATF16949 certification for automotive quality" },
+  { year: "2011", title: "Excellence Awards", description: "Recognized by Delphi-TVS for quality excellence" },
   { year: "2015", title: "Global Reach", description: "Expanded client base to include global OEMs" },
-  { year: "2020", title: "Excellence Awards", description: "Recognized by Delphi-TVS for quality excellence" },
-  { year: "2024", title: "Continued Growth", description: "Investing in advanced CNC sliding head technology" },
+  { year: "2020", title: "Continued Growth", description: "Investing in advanced LenC sliding head technology" },
 ];
 
 const values = [
