@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/gks-logo.png";
+import { Mail, MapPin } from "lucide-react";
+import logo from "@/assets/gke-logo.png";
 const navigation = {
   main: [{
     name: "Home",
@@ -24,7 +24,7 @@ const navigation = {
     name: "Contact",
     href: "/contact"
   }],
-  certifications: ["IATF16949:2016", "ISO 9001:2015"]
+  certifications: ["IATF16949:2016"]
 };
 export function Footer() {
   return <footer className="bg-accent text-accent-foreground">
@@ -33,10 +33,10 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3">
-              <img className="h-12 w-auto" src={logo} alt="GKS Logo" />
+              <img className="h-12 w-auto" src={logo} alt="GKE Logo" />
               <div>
-                <span className="font-display font-bold text-xl text-accent-foreground">Geekay's</span>
-                <span className="block text-xs text-accent-foreground/70 font-medium -mt-1">Engineering Works</span>
+                <span className="font-display font-bold text-2xl text-accent-foreground">Geekay's</span>
+                <span className="block text-sm text-accent-foreground/70 font-medium -mt-1">Engineering Works</span>
               </div>
             </Link>
             <p className="mt-4 text-sm text-accent-foreground/80 leading-relaxed">Precision machining excellence since 1995.</p>
@@ -63,12 +63,6 @@ export function Footer() {
                 <span className="text-sm text-accent-foreground/80">
                   No. 9-A, Developed Plot, SIDCO Industrial Estate, Ambattur, Chennai – 600098, Tamil Nadu, India
                 </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-sm text-accent-foreground/80 hover:text-primary transition-colors">
-                  +91 98765 43210
-                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
