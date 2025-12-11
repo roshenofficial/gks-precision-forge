@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, Factory, Truck, Shield } from "lucide-react";
+import { ArrowRight, Building2, Factory, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 
 const clients = [
   { name: "Delphi-TVS Diesel Systems", type: "Tier-2", description: "Fuel injection systems and diesel technology leader" },
   { name: "Electromags", type: "Tier-2", description: "Automotive electromagnetic components manufacturer" },
+  { name: "Lucas-TVS", type: "Tier-2", description: "Automotive electrical and electronics manufacturer" },
   { name: "Bosch", type: "Tier-1", description: "Global automotive technology and solutions provider" },
-  { name: "Mahindra", type: "OEM", description: "Leading Indian automotive manufacturer" },
-  { name: "Nissan", type: "OEM", description: "Japanese multinational automobile manufacturer" },
-  { name: "Renault", type: "OEM", description: "French multinational automotive manufacturer" },
-  { name: "JCB", type: "OEM", description: "Construction equipment and machinery leader" },
+  { name: "Mahindra", type: "Tier-1", description: "Leading Indian automotive manufacturer" },
+  { name: "Nissan", type: "Tier-1", description: "Japanese multinational automobile manufacturer" },
+  { name: "Renault", type: "Tier-1", description: "French multinational automotive manufacturer" },
+  { name: "JCB", type: "Tier-1", description: "Construction equipment and machinery leader" },
   { name: "Simson", type: "Tier-2", description: "Precision automotive components supplier" },
 ];
 
@@ -18,7 +19,6 @@ const industries = [
   { name: "Automotive", icon: Truck, description: "Passenger vehicles, commercial vehicles, and two-wheelers" },
   { name: "Construction Equipment", icon: Building2, description: "Heavy machinery and construction vehicles" },
   { name: "Industrial Automation", icon: Factory, description: "Automated systems and industrial machinery" },
-  { name: "Defense", icon: Shield, description: "Defense vehicles and military equipment components" },
 ];
 
 const supplyChain = [

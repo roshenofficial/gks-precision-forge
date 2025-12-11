@@ -23,7 +23,7 @@ const machines = [
     title: "Multi-Spindle Automats",
     subtitle: "Gildemeister, Wickman, Traub",
     description: "German-engineered multi-spindle automatic lathes for high-volume, cost-effective production with exceptional consistency.",
-    specs: ["6-8 spindle configurations", "Simultaneous operations", "Cost-effective production", "High repeatability"],
+    specs: ["6 spindle configurations", "Simultaneous operations", "Cost-effective production", "High repeatability"],
     image: heroCnc,
   },
   {
@@ -36,8 +36,8 @@ const machines = [
   {
     title: "VMC - Vertical Machining",
     subtitle: "AMS 540V, DART",
-    description: "3-axis vertical machining centers for precision milling, drilling, and complex contouring operations.",
-    specs: ["3-axis milling", "High-speed spindle", "Automatic tool changer", "CAD/CAM integration"],
+    description: "3-axis and 4-axis vertical machining centers for precision milling, drilling, and complex contouring operations.",
+    specs: ["3-axis & 4-axis milling", "High-speed spindle", "Automatic tool changer", "CAD/CAM integration"],
     image: vmcMachine,
   },
   {
