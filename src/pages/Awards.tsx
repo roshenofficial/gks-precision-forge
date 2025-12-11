@@ -13,24 +13,29 @@ const certifications = [
 
 const awards = [
   {
-    year: "2023",
-    title: "Delphi-TVS Best Supplier Award",
-    description: "Recognized for outstanding quality, delivery performance, and partnership excellence.",
+    year: "2017-18",
+    title: "Best Supplier for Consistent Quality Rating",
+    description: "Recognized by Delphi-TVS Diesel System Limited for consistent quality performance.",
   },
   {
-    year: "2022",
-    title: "Electromags Zero-Defect Achievement",
-    description: "Achieved zero-defect delivery across all shipments for the entire fiscal year.",
+    year: "2012-13",
+    title: "Best Supplier Award for Consistent Overall Rating",
+    description: "Awarded by Delphi-TVS Diesel System Limited for consistent overall performance.",
   },
   {
-    year: "2021",
-    title: "Industry Association Excellence in Manufacturing",
-    description: "Awarded for innovation and excellence in precision machining processes.",
+    year: "2011-12",
+    title: "Zero PPM Supplier Award",
+    description: "Achieved zero parts per million defect rate, recognized by Delphi-TVS Diesel System Limited.",
   },
   {
-    year: "2020",
-    title: "Delphi-TVS Quality Excellence Award",
-    description: "Acknowledged for maintaining exceptional Cpk values and process consistency.",
+    year: "2010-11",
+    title: "Best Supplier Award",
+    description: "Recognized by Delphi-TVS Diesel System Limited for outstanding supplier performance.",
+  },
+  {
+    year: "2010-11",
+    title: "Best Supplier Award for Consistent Overall Rating",
+    description: "Awarded by Delphi-TVS Diesel System Limited for consistent overall rating excellence.",
   },
 ];
 
@@ -71,7 +76,7 @@ export default function Awards() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="flex justify-center max-w-4xl mx-auto">
             {certifications.map((cert) => (
               <div key={cert.name} className="industrial-card p-8 text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">

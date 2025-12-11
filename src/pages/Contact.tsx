@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Clock, MessageCircle, Send } from "lucide-react";
+import { Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,12 +18,6 @@ const contactInfo = [
     title: "Email",
     content: "info@geekayseng.com",
     href: "mailto:info@geekayseng.com",
-  },
-  {
-    icon: Phone,
-    title: "Phone",
-    content: "+91 98765 43210",
-    href: "tel:+919876543210",
   },
   {
     icon: Clock,
