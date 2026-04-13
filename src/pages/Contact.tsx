@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react";
+import { Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,8 +16,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@geekayseng.com",
-    href: "mailto:info@geekayseng.com",
+    content: "gks6971@yahoo.com",
+    href: "mailto:gks6971@yahoo.com",
   },
   {
     icon: Clock,
@@ -70,9 +70,6 @@ export default function Contact() {
     setIsSubmitting(false);
   };
 
-  const whatsappNumber = "919876543210";
-  const whatsappMessage = encodeURIComponent("Hello, I'm interested in your precision machining services.");
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <Layout>
@@ -123,16 +120,9 @@ export default function Contact() {
               </div>
               
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground">
                   <strong>GST Number:</strong> 33AADFG6951H1ZG
                 </p>
-                
-                <Button variant="outline" className="w-full" asChild>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Chat on WhatsApp
-                  </a>
-                </Button>
               </div>
             </div>
 
